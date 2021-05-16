@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang=en>
+    | <head>
+        <meta charset=UTF-8>
+        <meta http-equiv=X-UA-Compatible content=IE=edge>
+        <meta name=viewport content=width=device-width, initial-scale=1.0>
+        <title>Pokédex</title>
+    </head>
+    <body>
+        <script>
+            console.log('¡Hola maestro!');
+            class Pokémon
+            {
+                constructor(nombre, naturaleza, tipo)
+                {
+                    this.nombre = nombre;
+                    this.naturaleza = naturaleza;
+                    this.tipo = tipo;
+                    this.vida = 1;
+                    this.ataque = 1
+                    this.defensa = 1;
+                    this.velocidad = 1;
+                    this.nivel = 1;
+                }
+                Presentarse()
+                {
+                     console.log('Hola, me llamo ' + this.nombre + ', soy tipo ' + this.tipo + ' y estoy al nivel ' + this.nivel);
+                }
+                Subirnivel()
+                {
+                    if(this.nivel<=100)
+                    {
+                        this.nivel+= 1;
+                        if(this.naturaleza== 'audaz')
+                        {
+                            this.vida+= 4;
+                        }
+                        if(this.naturaleza== 'osada')
+                        {
+                            this.defensa+= 4;
+                        }
+                        if(this.naturaleza== 'cauta')
+                        {
+                            this.vida+= 4;
+                        }
+                        if(this.naturaleza== 'alegre')
+                        {
+                            this.velocidad+= 4;
+                        }
+                        console.log("El pokémon ha subido de nivel, ahora está en el nivel " + this.nivel + " y ha subido 4 puntos en su naturaleza: " + this.naturaleza);
+                    }
+                    else
+                    {
+                        console.log("El pokémon ya ha alcanzado el máximo de nivel");
+                    }
+                }
+                Suma()
+                {
+                    let total= this.vida + this.ataque + this.defensa + this.velocidad;
+                    console.log('Suma de estadísticas: ' + total);
+                }
+                Promedio()
+                {
+                    let suma= this.vida + this.ataque + this.defensa + this.velocidad;
+                    let promedio= suma/4;
+                    console.log("Promedio de estadísticas: " + promedio);
+                }
+            }
+
+            const NINETALES = new Pokémon('Ninetales', 'cauta' , 'fuego');
+
+            const PARASECT = new Pokémon('Parasect', 'alegre' , 'planta');
+
+            const ZUBAT = new Pokémon('Zubat', 'audaz' , 'veneno');
+
+            const PSYDUCK = new Pokémon('Psyduck', 'osada' , 'agua');
+
+            const GENGAR = new Pokémon('Gengar', 'audaz' , 'Fantasma');
+        </script>
+        <nonscript>
+            Favor de habilitar JS en su navegador
+        </nonscript>
+    </body>
+</html>
