@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang=en>
+    <head>
+        <meta charset=UTF-8>
+        <meta http-equiv=X-UA-Compatible content="IE=edge">
+        <meta name=viewport content="width=device-width", initial-scale=1.0>
+        <title>Dibujos</title>
+        <link href="./index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="canvas">
+            <canvas id="primercanvas" width="300px" heigth="400px"></canvas>
+        </div>
+        <div id= "cuadro1"></div>
+        <div id="pre">
+            <label for="cf1">Color de fondo</label>
+            <br>
+            <input id="cf1" type="color">
+            <br><br>
+            <div id="cf2n"><label for="cf2"></label></div>
+            <br>
+            <input id="cf2" type="color">
+            <br><br>
+            <label for="tipo">Tipo de color de fondo </label><br>
+            <select name="tipo" id="tipo">
+                <option value="solido">Sólido</option>
+                <option value="lineal">Degradado lineal</option>
+                <option value="radial">Degradado radial</option>
+            </select>
+            <br><br>
+            <label for="figura" class="figura">Figura</label><br>
+            <select name="figura" id="figura">
+                <option value="estrella">Estrella</option>
+                <option value="mickey">Mickey Mouse</option>
+                <option value="cactus">Cactus</option>
+            </select>
+            <input type="submit" id="dibujar" value="dibujar">
+        </div>
+        <br><br>
+        <div id="cuadro2"></div>
+        <script src="index.js"></script>
+    </body>
+</html>

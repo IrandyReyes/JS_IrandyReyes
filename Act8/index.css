@@ -1,0 +1,42 @@
+body{
+    background-color: bisque;
+}
+#canvas{
+    position: absolute;
+    left: 30%;
+    margin-top:11%;
+    z-index: 4;
+}
+canvas{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    z-index: 4;
+}
+#cuadro1{
+    background-color:lightsalmon;
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 26%;
+    bottom: 23%;
+    z-index: 1;
+}
+#cuadro2{
+    position: absolute;
+    background-color:rgb(252, 174, 143);
+    width: 28%;
+    height: 55%;
+    left: 27%;
+    bottom: 25.5%;
+    z-index: 2;
+}
+#pre{
+    position: absolute;
+    left: 60%;
+    bottom: 43%;
+    z-index: 3;
+}
+#cf2, #cf2n{
+    display: none;
+}
